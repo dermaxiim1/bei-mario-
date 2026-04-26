@@ -41,7 +41,7 @@ export function MobileNav() {
             </Link>
           ))}
           <a
-            href={`tel:${SITE.contact.phoneFestnetzTel}`}
+            href="#besuch"
             onClick={() => setOpen(false)}
             className="mt-4 inline-flex justify-center rounded-full bg-terra px-5 py-3 text-sm font-medium tracking-wider text-cream"
           >

@@ -2,6 +2,12 @@ import Image from "next/image";
 
 import { SITE } from "@/lib/site";
 
+const HEADLINE_LINES: { words?: string[]; em?: string; suffix?: string }[] = [
+  { words: ["Wie", "bei"] },
+  { em: "Mama,", suffix: "nur" },
+  { words: ["exotisch."] },
+];
+
 export function Hero() {
   return (
     <section className="relative grid min-h-screen items-center gap-10 px-6 pb-20 pt-36 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:px-14 lg:pt-40">
@@ -12,11 +18,27 @@ export function Hero() {
           <span className="h-px w-7 bg-ink-soft" />
         </div>
         <h1 className="font-serif text-[clamp(56px,9.5vw,144px)] font-light leading-[0.92] tracking-[-0.04em] text-ink">
-          Wie bei
-          <br />
-          <em className="font-normal italic text-terra">Mama,</em> nur
-          <br />
-          exotisch.
+          {HEADLINE_LINES.map((line, i) => (
+            <span key={i} className="block">
+              {line.words?.map((word, j) => (
+                <span key={`${i}-${j}`}>
+                  <Word>{word}</Word>
+                  {j < (line.words?.length ?? 0) - 1 && " "}
+                </span>
+              ))}
+              {line.em && (
+                <em className="font-normal italic text-terra">
+                  <Word italic>{line.em}</Word>
+                </em>
+              )}
+              {line.suffix && (
+                <>
+                  {" "}
+                  <Word>{line.suffix}</Word>
+                </>
+              )}
+            </span>
+          ))}
         </h1>
         <p className="mt-7 max-w-md text-lg leading-relaxed text-ink-soft md:text-xl">
           Schnitzel wie von der Mama und Curry mit Mango — bei uns kein Widerspruch,
@@ -25,7 +47,7 @@ export function Hero() {
         </p>
         <div className="mt-9 flex flex-wrap items-center gap-4">
           <a
-            href={`tel:${SITE.contact.phoneFestnetzTel}`}
+            href="#besuch"
             className="inline-flex items-center gap-2 rounded-full bg-ink px-7 py-4 text-sm font-medium tracking-wider text-cream transition-all hover:-translate-y-0.5 hover:bg-terra"
           >
             Tisch reservieren <span aria-hidden>→</span>
@@ -60,9 +82,28 @@ export function Hero() {
           </div>
         </div>
         <div className="absolute bottom-6 left-6 -rotate-2 bg-cream px-4 py-3 font-hand text-xl text-ink shadow-[0_6px_16px_rgba(0,0,0,0.1)] md:text-2xl">
-          Frisch zubereitet — bitte etwas Geduld.
+          Spargel-Buffet · 18.–24. Juni
         </div>
       </div>
     </section>
+  );
+}
+
+function Word({
+  children,
+  italic = false,
+}: {
+  children: React.ReactNode;
+  italic?: boolean;
+}) {
+  return (
+    <span
+      className={
+        "inline-block transition-[transform,color] duration-[400ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:-translate-y-1.5 hover:text-terra" +
+        (italic ? " italic" : "")
+      }
+    >
+      {children}
+    </span>
   );
 }

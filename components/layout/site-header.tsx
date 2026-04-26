@@ -33,8 +33,8 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-3">
           <a
-            href={`tel:${SITE.contact.phoneFestnetzTel}`}
-            className="hidden rounded-full bg-terra px-5 py-3 text-xs font-medium tracking-wider text-cream transition-all hover:-translate-y-px hover:bg-terra-deep md:inline-block"
+            href="#besuch"
+            className="hidden rounded-full bg-terra px-[22px] py-3 text-[13px] font-medium tracking-[0.04em] text-cream transition-all hover:-translate-y-px hover:bg-terra-deep md:inline-block"
           >
             Tisch reservieren
           </a>

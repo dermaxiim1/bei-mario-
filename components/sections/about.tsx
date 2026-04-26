@@ -11,23 +11,41 @@ export function About() {
       <div>
         <SectionLabel>Unsere Geschichte</SectionLabel>
         <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
-          Mario, seine Familie
+          Mario, seine Frau
           <br />
           und ein <em className="italic text-terra">Schwätzchen.</em>
         </h2>
 
         <div className="mt-8 space-y-4 text-lg leading-relaxed text-ink-soft">
           <p>
-            &ldquo;Ich komme ursprünglich aus Sri Lanka — lebe aber bereits seit meinem
-            19. Lebensjahr in Deutschland, und habe eine Frau und zwei wundervolle Söhne.
-            Ich bin gelernter Koch und möchte hier in der Gaststätte des KGV
-            Tannenberg-Allee e.V. für meine Gäste einen Platz zum Wohlfühlen, Schlemmen
-            und Genießen, zum Freunden treffen oder ruhigen Verweilen, aber auch zum
-            Feiern und fröhlich sein, erschaffen.&rdquo;
+            Vor über fünfundzwanzig Jahren hat Mario aus dem ehemaligen Vereinsheim ein
+            kleines Wohnzimmer gemacht. Karierte Tischdecken, schwere Holzstühle,
+            draußen die alten Apfelbäume.
+          </p>
+          <p>
+            Drinnen kocht er, was er in seiner Heimat in Sri Lanka gelernt hat, was
+            seine Frau aus Schwaben mitgebracht hat, und was die Gäste über die Jahre
+            an Wünschen vorbeibrachten. Daraus ist eine Karte geworden, die es so
+            nirgends gibt: Schnitzel und Curry, Tapas und Reis — und immer auf den
+            Punkt.
           </p>
         </div>
 
-        <div className="mt-8 -rotate-[1deg] font-hand text-3xl leading-snug text-terra md:text-4xl">
+        <figure className="mt-10 border-l-2 border-terra/40 pl-6">
+          <blockquote className="text-base italic leading-relaxed text-ink-soft md:text-lg">
+            &ldquo;Ich komme ursprünglich aus Sri Lanka — lebe aber bereits seit meinem
+            19. Lebensjahr in Deutschland, und habe eine Frau und zwei wundervolle
+            Söhne. Ich bin gelernter Koch und möchte hier in der Gaststätte des KGV
+            Tannenberg-Allee e.V. für meine Gäste einen Platz zum Wohlfühlen, Schlemmen
+            und Genießen, zum Freunden treffen oder ruhigen Verweilen, aber auch zum
+            Feiern und fröhlich sein, erschaffen.&rdquo;
+          </blockquote>
+          <figcaption className="mt-3 text-sm text-ink-soft/80">
+            — Ihr Mario Wickremasinge
+          </figcaption>
+        </figure>
+
+        <div className="mt-9 -rotate-[1deg] font-hand text-3xl leading-snug text-terra md:text-4xl">
           &ldquo;Jeder Teller ist mit so viel Kunst angerichtet,
           <br />
           dass der Genuss schon vor dem Essen beginnt.&rdquo;
