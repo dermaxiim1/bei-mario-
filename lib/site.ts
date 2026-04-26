@@ -18,7 +18,11 @@ const HOURS: readonly SiteHourBlock[] = [
 export const SITE = {
   name: "Bei Mario",
   tagline: "deutsche und asiatische Küche",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://bei-mario.vercel.app",
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "https://bei-mario.vercel.app"),
   description:
     "Bei Mario in Hannover-List — deutsche und asiatische Küche im Gartenvereinsheim. Schnitzel, Curry, Tapas und mehr. Tisch reservieren unter 0511 631412.",
   owner: "Mario Wickremasinge",
