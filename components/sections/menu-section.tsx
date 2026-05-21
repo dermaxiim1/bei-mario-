@@ -35,6 +35,57 @@ export function MenuSection() {
           </p>
         </div>
 
+        <div className="mb-12 grid gap-3 sm:grid-cols-3">
+          <a
+            href="/menu/speisekarte-2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group rounded-sm border border-ink/15 bg-paper-dark/40 px-5 py-4 transition hover:-translate-y-0.5 hover:border-terra"
+          >
+            <div className="text-[10px] uppercase tracking-[0.18em] text-ink-soft/70">
+              PDF · Karte zum Mitnehmen
+            </div>
+            <div className="mt-1 font-serif text-xl font-medium text-ink">
+              Speisekarte
+            </div>
+            <div className="text-sm text-ink-soft">
+              Alle Gerichte, Tapas &amp; Getränke
+            </div>
+          </a>
+          <a
+            href="/menu/wochenkarte-aktuell.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group rounded-sm border border-ink/15 bg-paper-dark/40 px-5 py-4 transition hover:-translate-y-0.5 hover:border-terra"
+          >
+            <div className="text-[10px] uppercase tracking-[0.18em] text-ink-soft/70">
+              PDF · diese Woche
+            </div>
+            <div className="mt-1 font-serif text-xl font-medium text-ink">
+              Wochenkarte
+            </div>
+            <div className="text-sm text-ink-soft">
+              25.–30. Mai 2026 · Mittagstisch
+            </div>
+          </a>
+          <a
+            href="/menu/spargelkarte-2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group rounded-sm border border-ink/15 bg-paper-dark/40 px-5 py-4 transition hover:-translate-y-0.5 hover:border-terra"
+          >
+            <div className="text-[10px] uppercase tracking-[0.18em] text-ink-soft/70">
+              PDF · Saisonal
+            </div>
+            <div className="mt-1 font-serif text-xl font-medium text-ink">
+              Spargelkarte
+            </div>
+            <div className="text-sm text-ink-soft">
+              Frisch &amp; regional · solange Saison
+            </div>
+          </a>
+        </div>
+
         <div className="mb-12 flex flex-wrap gap-2">
           {MENU_CATEGORIES.map((c) => (
             <button
