@@ -41,4 +41,29 @@ export const GALLERY: GalleryImage[] = [
     alt: "Wraps und Häppchen auf dem Buffet",
     className: "col-span-12 row-span-2 sm:col-span-6 lg:col-span-4",
   },
+  {
+    src: "/images/gallery/paella-meeresfruechte.jpg",
+    alt: "Frisch zubereitete Paella mit Meeresfrüchten und Erbsen",
+    className: "col-span-6 row-span-2 lg:col-span-3 lg:row-span-3",
+  },
+  {
+    src: "/images/gallery/tapas-platte.jpg",
+    alt: "Tapas-Platte mit Serrano-Schinken, Manchego und Samosas",
+    className: "col-span-12 row-span-2 sm:col-span-6 lg:col-span-5 lg:row-span-2",
+  },
+  {
+    src: "/images/gallery/buffet-warmhaltung.jpg",
+    alt: "Festbuffet mit warmen Hauptgängen, Beilagen und Soßen",
+    className: "col-span-6 row-span-2 lg:col-span-4 lg:row-span-3",
+  },
+  {
+    src: "/images/gallery/sektempfang-erdbeere.jpg",
+    alt: "Sektempfang im Garten — Prosecco und Orangensaft mit Erdbeere",
+    className: "col-span-6 row-span-2 lg:col-span-4",
+  },
+  {
+    src: "/images/gallery/cupcakes-feier.jpg",
+    alt: "Cupcake-Etagere zur Hochzeitsfeier mit essbaren Blüten",
+    className: "col-span-12 row-span-2 sm:col-span-6 lg:col-span-4",
+  },
 ];
