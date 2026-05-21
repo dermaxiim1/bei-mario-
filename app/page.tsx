@@ -2,7 +2,7 @@ import { About } from "@/components/sections/about";
 import { EventsSection } from "@/components/sections/events-section";
 import { GallerySection } from "@/components/sections/gallery-section";
 import { Hero } from "@/components/sections/hero";
-import { MenuSection } from "@/components/sections/menu-section";
+import { MenuCards } from "@/components/sections/menu-cards";
 import { ReviewsSection } from "@/components/sections/reviews-section";
 import { VisitSection } from "@/components/sections/visit-section";
 import { restaurantJsonLd } from "@/lib/json-ld";
@@ -11,8 +11,8 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
+      <MenuCards />
       <About />
-      <MenuSection />
       <GallerySection />
       <EventsSection />
       <ReviewsSection />
