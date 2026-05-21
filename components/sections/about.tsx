@@ -11,37 +11,44 @@ export function About() {
       <div>
         <SectionLabel>Unsere Geschichte</SectionLabel>
         <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
-          Mario, seine Frau
+          Herzlich
           <br />
-          und ein <em className="italic text-terra">Schwätzchen.</em>
+          <em className="italic text-terra">Willkommen!</em>
         </h2>
 
         <div className="mt-8 space-y-4 text-lg leading-relaxed text-ink-soft">
           <p>
-            Vor über fünfundzwanzig Jahren hat Mario aus dem ehemaligen Vereinsheim ein
-            kleines Wohnzimmer gemacht. Karierte Tischdecken, schwere Holzstühle,
-            draußen die alten Apfelbäume.
+            Ich bin Mario Wickremasinghe und heiße Sie hier in meinem Restaurant
+            herzlich willkommen. Ich komme ursprünglich aus Sri Lanka, lebe aber bereits
+            seit meinem 19. Lebensjahr in Deutschland, habe eine Frau und zwei
+            wundervolle Söhne.
           </p>
           <p>
-            Drinnen kocht er, was er in seiner Heimat in Sri Lanka gelernt hat, was
-            seine Frau aus Schwaben mitgebracht hat, und was die Gäste über die Jahre
-            an Wünschen vorbeibrachten. Daraus ist eine Karte geworden, die es so
-            nirgends gibt: Schnitzel und Curry, Tapas und Reis — und immer auf den
-            Punkt.
+            Ich bin gelernter Koch und möchte hier in der Gaststätte des KGV
+            Tannenberg-Allee e.&nbsp;V. für meine Gäste einen Platz zum Wohlfühlen,
+            Schlemmen und Genießen, zum Freunde treffen oder ruhigen Verweilen, aber
+            auch zum Feiern und fröhlich sein, erschaffen. Kulinarisch biete ich dazu
+            sowohl Gerichte aus der deutschen als auch aus der asiatischen Küche an.
+          </p>
+          <p>
+            Es wird u.&nbsp;a. einen wöchentlich wechselnden Mittagstisch geben und
+            bereits heute möchte ich Ihnen unten auf dieser Seite einen ersten Ausblick
+            auf die geplanten Höhepunkte in der Zukunft geben. Natürlich würde ich mich
+            auch freuen, Ihre privaten Familienfeiern (wie z.&nbsp;B. Geburtstagsfeiern,
+            Geburtstagsfrühstück oder auch -brunch, Hochzeiten, Taufen, Konfirmationen,
+            Trauerfeiern) ausrichten zu dürfen und diese speziellen Ereignisse damit für
+            Sie zu etwas ganz Besonderem werden zu lassen.
+          </p>
+          <p>
+            Bitte sprechen Sie mich gerne jederzeit an, wenn Sie Fragen, Wünsche oder
+            Anregungen haben. Ich wünsche Ihnen eine angenehme Zeit bei uns und guten
+            Appetit!
           </p>
         </div>
 
         <figure className="mt-10 border-l-2 border-terra/40 pl-6">
-          <blockquote className="text-base italic leading-relaxed text-ink-soft md:text-lg">
-            &ldquo;Ich komme ursprünglich aus Sri Lanka — lebe aber bereits seit meinem
-            19. Lebensjahr in Deutschland, und habe eine Frau und zwei wundervolle
-            Söhne. Ich bin gelernter Koch und möchte hier in der Gaststätte des KGV
-            Tannenberg-Allee e.V. für meine Gäste einen Platz zum Wohlfühlen, Schlemmen
-            und Genießen, zum Freunden treffen oder ruhigen Verweilen, aber auch zum
-            Feiern und fröhlich sein, erschaffen.&rdquo;
-          </blockquote>
-          <figcaption className="mt-3 text-sm text-ink-soft/80">
-            — Ihr Mario Wickremasinge
+          <figcaption className="font-serif text-lg italic text-ink-soft">
+            Herzlich, Ihr Mario Wickremasinghe und sein Team
           </figcaption>
         </figure>
 
