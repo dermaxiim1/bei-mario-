@@ -3,9 +3,35 @@ export type EventItem = {
   desc: string;
   date?: string;
   highlight?: string;
+  poster?: {
+    image: string;
+    pdf: string;
+  };
 };
 
 export const EVENTS: EventItem[] = [
+  {
+    title: "Brunch-Buffet",
+    desc:
+      "Ausgiebig in den Sonntag starten — herzhaftes Frühstück, frisch Gebackenes und süße Klassiker am Buffet. Getränke inklusive.",
+    date: "Sonntag, 26. Juli · ab 10:30",
+    highlight: "22 € pro Person · Getränke inklusive",
+    poster: {
+      image: "/images/events/poster-brunch-buffet.jpg",
+      pdf: "/menu/poster-brunch-26-juli.pdf",
+    },
+  },
+  {
+    title: "Spanische Tapas-Nacht",
+    desc:
+      "Paella, Tapas und Sangria — dazu DJ Lopez auflegt und ein halbstündiger Salsa-Schnupperkurs. Anmeldung telefonisch bei Mario erbeten.",
+    date: "Sonntag, 30. August · ab 18:00",
+    highlight: "Zur Tapasplatte ab 4 Personen eine Flasche spanischer Wein gratis.",
+    poster: {
+      image: "/images/events/poster-spanische-tapas.jpg",
+      pdf: "/menu/poster-spanische-tapas-30-aug.pdf",
+    },
+  },
   {
     title: "Eröffnungsfeier mit Oktoberfest",
     desc:
@@ -47,10 +73,5 @@ export const EVENTS: EventItem[] = [
       "Spanferkel vom Holzkohlegrill, Beilagen aus dem Garten — Grillspezialitäten den ganzen Abend.",
     date: "Termin auf Anfrage",
     highlight: "Zur Grillplatte ab 4 Personen eine Flasche Riesling gratis.",
-  },
-  {
-    title: "Spanische Tapas Tage",
-    desc: "Eine Woche lang Tapas-Karte erweitert — Sangria, Wein und Live-Atmosphäre.",
-    date: "Termin auf Anfrage",
   },
 ];
