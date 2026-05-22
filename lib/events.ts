@@ -61,11 +61,15 @@ export const EVENTS: EventItem[] = [
     date: "Termin auf Anfrage",
   },
   {
-    title: "Spargelessen Buffet",
+    title: "Spargel-Saison",
     desc:
-      "Frischer Spargel aus der Region — klassisch mit Schinken oder mit asiatischem Twist.",
-    date: "Termin auf Anfrage",
+      "Eine Woche frischer Spargel aus der Region — klassisch mit Schinken oder mit asiatischem Twist. Täglich von 11 bis 22 Uhr durchgehend warme Küche.",
+    date: "18.–24. Juni · täglich 11–22 Uhr",
     highlight: "Zur Spargelplatte ab 4 Personen eine Flasche Riesling gratis.",
+    poster: {
+      image: "/images/events/poster-spargel-saison.jpg",
+      pdf: "/menu/poster-spargel-saison-18-24-juni.pdf",
+    },
   },
   {
     title: "Sommerfest mit Spanferkel",
