@@ -3,9 +3,9 @@ import Image from "next/image";
 import { SITE } from "@/lib/site";
 
 const HEADLINE_LINES: { words?: string[]; em?: string; suffix?: string }[] = [
-  { words: ["Wie", "bei"] },
-  { em: "Mama,", suffix: "nur" },
-  { words: ["exotisch."] },
+  { words: ["Schlemmen,"] },
+  { em: "verweilen,", suffix: "" },
+  { words: ["feiern."] },
 ];
 
 export function Hero() {
@@ -41,9 +41,9 @@ export function Hero() {
           ))}
         </h1>
         <p className="mt-7 max-w-md text-lg leading-relaxed text-ink-soft md:text-xl">
-          Schnitzel wie von der Mama und Curry mit Mango — bei uns kein Widerspruch,
-          sondern Programm. Deutsche und asiatische Küche in entspannter, rustikaler
-          Atmosphäre, wie es in einem Gartenvereinsheim sein soll.
+          Deutsche und asiatische Küche in der Gaststätte des KGV Tannenberg-Allee.
+          Wöchentlich wechselnder Mittagstisch, Familienfeiern auf Wunsch — und immer
+          ein Platz zum Wohlfühlen.
         </p>
         <div className="mt-9 flex flex-wrap items-center gap-4">
           <a
@@ -82,7 +82,7 @@ export function Hero() {
           </div>
         </div>
         <div className="absolute bottom-6 left-6 -rotate-2 bg-cream px-4 py-3 font-hand text-xl text-ink shadow-[0_6px_16px_rgba(0,0,0,0.1)] md:text-2xl">
-          Spargel-Buffet · 18.–24. Juni
+          Mittagstisch · wöchentlich neu
         </div>
       </div>
     </section>
