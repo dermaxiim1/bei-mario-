@@ -2,22 +2,10 @@ import { SectionLabel } from "@/components/ui/section-label";
 
 const CARDS = [
   {
-    href: "/menu/speisekarte-2026.pdf",
-    eyebrow: "PDF · Karte zum Mitnehmen",
-    title: "Speisekarte",
-    sub: "Alle Gerichte, Tapas & Getränke",
-  },
-  {
     href: "/menu/wochenkarte-aktuell.pdf",
     eyebrow: "PDF · diese Woche",
     title: "Wochenkarte",
-    sub: "25.–30. Mai 2026 · Mittagstisch",
-  },
-  {
-    href: "/menu/spargelkarte-2026.pdf",
-    eyebrow: "PDF · Saisonal",
-    title: "Spargelkarte",
-    sub: "Frisch & regional · solange Saison",
+    sub: "Aktueller Mittagstisch · wöchentlich neu",
   },
 ];
 
@@ -40,14 +28,14 @@ export function MenuCards() {
           </p>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-3">
+        <div className="flex flex-wrap gap-4">
           {CARDS.map((c) => (
             <a
               key={c.href}
               href={c.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group rounded-sm border border-ink/15 bg-paper-dark/40 px-6 py-6 transition hover:-translate-y-0.5 hover:border-terra"
+              className="group w-full rounded-sm border border-ink/15 bg-paper-dark/40 px-6 py-6 transition hover:-translate-y-0.5 hover:border-terra sm:w-[340px]"
             >
               <div className="text-[10px] uppercase tracking-[0.18em] text-ink-soft/70">
                 {c.eyebrow}
