@@ -52,7 +52,8 @@ export const SITE = {
   nav: [
     { href: "#geschichte", label: "Geschichte" },
     { href: "#karte", label: "Karte" },
-    { href: "#bilder", label: "Bilder" },
+    { href: "#gerichte", label: "Gerichte" },
+    { href: "#bilder", label: "Feiern" },
     { href: "#veranstaltungen", label: "Veranstaltungen" },
     { href: "#besuch", label: "Besuch" },
   ] as const,
