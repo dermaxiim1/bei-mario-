@@ -65,28 +65,15 @@ export function Hero() {
       </div>
 
       <div className="relative h-[58vh] min-h-[460px] lg:h-[76vh]">
-        <div className="grid h-full grid-cols-2 gap-3 lg:gap-4">
-          {/* Gastgeber — Mario begrüßt an der Bar */}
-          <div className="relative h-[86%] self-end overflow-hidden rounded-sm shadow-[0_30px_80px_-30px_rgba(43,29,18,0.4)]">
-            <Image
-              src="/images/hero/mario-empfang.jpg"
-              alt="Mario begrüßt seine Gäste an der Bar mit einem Glas Sekt"
-              fill
-              preload
-              sizes="(min-width: 1024px) 25vw, 45vw"
-              className="object-cover object-[center_25%]"
-            />
-          </div>
-          {/* Koch — Mario an der frischen Paella */}
-          <div className="relative h-[86%] self-start overflow-hidden rounded-sm shadow-[0_30px_80px_-30px_rgba(43,29,18,0.4)]">
-            <Image
-              src="/images/hero/mario-paella.jpg"
-              alt="Mario an der frisch zubereiteten Paella"
-              fill
-              sizes="(min-width: 1024px) 25vw, 45vw"
-              className="object-cover object-[center_35%]"
-            />
-          </div>
+        <div className="absolute inset-0 overflow-hidden rounded-sm shadow-[0_30px_80px_-30px_rgba(43,29,18,0.4)]">
+          <Image
+            src="/images/hero/mario-empfang.jpg"
+            alt="Mario begrüßt seine Gäste an der Bar mit einem Glas Sekt"
+            fill
+            preload
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover object-[center_30%]"
+          />
         </div>
         <div className="absolute -right-4 -top-7 flex size-32 rotate-[8deg] flex-col items-center justify-center rounded-full border border-terra bg-paper text-center font-serif italic text-terra md:-right-7 md:size-36">
           <div className="text-[28px] leading-none md:text-[32px]">Bei Mario</div>
