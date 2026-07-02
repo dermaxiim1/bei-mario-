@@ -5,14 +5,14 @@ export function ReviewsSection() {
   return (
     <section className="bg-paper px-6 py-24 lg:px-14 lg:py-32">
       <div className="mx-auto max-w-[1440px]">
-        <SectionLabel>Was Gäste sagen</SectionLabel>
+        <SectionLabel>Google-Bewertungen</SectionLabel>
         <h2 className="font-serif text-[clamp(40px,5.5vw,80px)] font-light leading-none tracking-[-0.03em]">
           Stimmen vom
           <br />
           <em className="italic text-terra">Stammtisch.</em>
         </h2>
 
-        <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {REVIEWS.map((review) => (
             <article
               key={review.author}

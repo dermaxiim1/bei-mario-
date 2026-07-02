@@ -4,26 +4,22 @@ export type Review = {
   source: string;
 };
 
-// Platzhalter-Reviews aus dem Design — durch echte Stammgast-Stimmen ersetzen
+// Echte Google-Bewertungen (Stand Juli 2026, Ø 4,8★).
+// Weitere Stimmen: einfach hier ergänzen — Reihenfolge = Anzeigereihenfolge.
 export const REVIEWS: Review[] = [
   {
-    text: "Jeder Teller ist mit so viel Kunst angerichtet, dass der Genuss schon vor dem Essen beginnt.",
-    author: "Renate K.",
-    source: "Stammgast seit 2001",
+    text: "Super leckeres Essen und sehr freundlich.",
+    author: "Thomas Züllich",
+    source: "★★★★★ · Google",
   },
   {
-    text: "Mario nimmt sich immer Zeit für ein Schwätzchen. Hier fühlt man sich wie zu Hause.",
-    author: "Klaus und Birgit M.",
-    source: "Stammgäste",
+    text: "Sehr schön in einer Gartenkolonie gelegen. Sehr freundliches Personal, abwechslungsreiche Wochenkarte — kinderfreundlich und barrierefrei.",
+    author: "Achim Wolfram",
+    source: "★★★★★ · Google",
   },
   {
-    text: "Curry mit Mango neben Schnitzel mit Pommes — und beides auf den Punkt. Wie das geht? Frag Mario.",
-    author: "Hannoversche Allgemeine",
-    source: "Restaurantkritik",
-  },
-  {
-    text: "Das Sommerfest im Garten ist jedes Jahr der Höhepunkt. Buffet wie aus dem Bilderbuch.",
-    author: "Andreas H.",
-    source: "Stammgast",
+    text: "Tolles Personal!",
+    author: "Felix Wolf",
+    source: "★★★★★ · Google",
   },
 ];
