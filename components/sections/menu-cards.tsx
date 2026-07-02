@@ -2,10 +2,10 @@ import { SectionLabel } from "@/components/ui/section-label";
 
 const CARDS = [
   {
-    href: "/menu/wochenkarte-aktuell.pdf",
-    eyebrow: "PDF · diese Woche",
-    title: "Wochenkarte",
-    sub: "Aktueller Mittagstisch · wöchentlich neu",
+    href: "/menu/speisekarte.pdf",
+    eyebrow: "PDF · Karte zum Mitnehmen",
+    title: "Speisekarte",
+    sub: "Alle Gerichte auf einen Blick",
   },
 ];
 
