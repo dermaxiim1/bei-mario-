@@ -28,11 +28,6 @@ export function DishGrid({ dishes }: { dishes: readonly Dish[] }) {
               sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
               className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
             />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent p-3 pt-10 text-left">
-              <span className="font-serif text-sm leading-tight text-cream md:text-base">
-                {dish.name}
-              </span>
-            </div>
           </button>
         ))}
       </div>
