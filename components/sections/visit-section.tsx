@@ -25,6 +25,23 @@ export function VisitSection() {
             </p>
           </div>
 
+          {SITE.closedForEvents.active &&
+            SITE.closedForEvents.dates.length > 0 && (
+              <div className="mt-9 rounded-sm border border-cream/30 bg-cream/10 p-5 backdrop-blur-sm">
+                <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-[0.14em]">
+                  <span aria-hidden>✱</span> Geschlossene Gesellschaft
+                </div>
+                <p className="mt-2 text-base leading-snug opacity-90">
+                  An diesen Tagen sind wir für private Veranstaltungen reserviert:
+                </p>
+                <ul className="mt-2 space-y-1 font-serif text-xl italic">
+                  {SITE.closedForEvents.dates.map((d) => (
+                    <li key={d}>{d}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
           <div className="mt-9">
             <p className="mb-2 text-sm uppercase tracking-[0.14em] opacity-85">
               {todayLabel(dayState)}

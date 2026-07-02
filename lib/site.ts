@@ -9,10 +9,10 @@ export type SiteHourBlock = {
 
 const HOURS: readonly SiteHourBlock[] = [
   { dayLabel: "Montag", days: [1], closed: true, label: "Ruhetag" },
-  { dayLabel: "Dienstag", days: [2], closed: true, label: "Ruhetag" },
+  { dayLabel: "Dienstag", days: [2], from: "12:00", to: "19:00" },
   { dayLabel: "Mittwoch – Freitag", days: [3, 4, 5], from: "12:00", to: "19:30" },
   { dayLabel: "Samstag", days: [6], from: "12:00", to: "19:00" },
-  { dayLabel: "Sonntag", days: [0], from: "12:00", to: "16:00" },
+  { dayLabel: "Sonntag", days: [0], from: "12:00", to: "17:00" },
 ];
 
 export const SITE = {
@@ -48,6 +48,13 @@ export const SITE = {
   },
 
   hours: HOURS,
+
+  // Geschlossene Gesellschaft / private Veranstaltungen.
+  // Tage oder Zeiträume einfach ergänzen bzw. entfernen; active steuert die Anzeige.
+  closedForEvents: {
+    active: true,
+    dates: ["13. – 19. Juli 2026"],
+  },
 
   nav: [
     { href: "#geschichte", label: "Geschichte" },
