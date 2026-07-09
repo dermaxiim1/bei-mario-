@@ -43,15 +43,9 @@ export const EVENTS: EventItem[] = [
     },
   },
   {
-    title: "Sri Lanka Buffet",
-    desc:
-      "Marios Heimatküche zum Schlemmen — Currys, Sambols und Reisspezialitäten aus Sri Lanka am Buffet.",
-    date: "Samstag, 29. August · ab 18:00",
-    highlight: "28 € pro Person · inklusive Welcome Drink",
-    poster: {
-      image: "/images/events/poster-sri-lanka-buffet.jpg",
-      pdf: "/menu/poster-sri-lanka-buffet-29-aug.pdf",
-    },
+    title: "Traditionelles Osteressen",
+    desc: "Lamm, Spargel und alles, was zu Ostern auf den Tisch gehört — am Buffet oder à la carte.",
+    date: "Termin auf Anfrage",
   },
   {
     title: "Grünkohl mit Schlachteplatte",
@@ -65,9 +59,15 @@ export const EVENTS: EventItem[] = [
     date: "Termin auf Anfrage",
   },
   {
-    title: "Traditionelles Osteressen",
-    desc: "Lamm, Spargel und alles, was zu Ostern auf den Tisch gehört — am Buffet oder à la carte.",
-    date: "Termin auf Anfrage",
+    title: "Sri Lanka Buffet",
+    desc:
+      "Marios Heimatküche zum Schlemmen — Currys, Sambols und Reisspezialitäten aus Sri Lanka am Buffet.",
+    date: "Samstag, 29. August · ab 18:00",
+    highlight: "28 € pro Person · inklusive Welcome Drink",
+    poster: {
+      image: "/images/events/poster-sri-lanka-buffet.jpg",
+      pdf: "/menu/poster-sri-lanka-buffet-29-aug.pdf",
+    },
   },
   {
     title: "Spargel-Saison",
