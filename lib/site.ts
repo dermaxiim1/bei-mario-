@@ -53,7 +53,8 @@ export const SITE = {
   // Tage oder Zeiträume einfach ergänzen bzw. entfernen; active steuert die Anzeige.
   closedForEvents: {
     active: true,
-    dates: ["13. – 19. Juli 2026"],
+    dates: ["12. – 22. Juli 2026"],
+    reopen: "Am 23. Juli ist Team Mario wieder für Sie da.",
   },
 
   nav: [

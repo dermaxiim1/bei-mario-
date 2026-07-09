@@ -39,6 +39,11 @@ export function VisitSection() {
                     <li key={d}>{d}</li>
                   ))}
                 </ul>
+                {SITE.closedForEvents.reopen && (
+                  <p className="mt-3 text-base leading-snug opacity-90">
+                    {SITE.closedForEvents.reopen}
+                  </p>
+                )}
               </div>
             )}
 
