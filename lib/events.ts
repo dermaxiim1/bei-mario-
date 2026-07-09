@@ -36,13 +36,22 @@ export const EVENTS: EventItem[] = [
     title: "Eröffnungsfeier mit Oktoberfest",
     desc:
       "Wir starten in die Saison — Oktoberfest-Klassiker, Live-Stimmung und ein voller Biergarten.",
-    date: "Termin auf Anfrage",
+    date: "1.–4. Oktober · täglich ab 18 Uhr",
+    poster: {
+      image: "/images/events/poster-oktoberfest-2026.jpg",
+      pdf: "/menu/poster-oktoberfest-1-4-okt.pdf",
+    },
   },
   {
     title: "Sri Lanka Buffet",
     desc:
       "Marios Heimatküche zum Schlemmen — Currys, Sambols und Reisspezialitäten aus Sri Lanka am Buffet.",
-    date: "Termin auf Anfrage",
+    date: "Samstag, 29. August · ab 18:00",
+    highlight: "28 € pro Person · inklusive Welcome Drink",
+    poster: {
+      image: "/images/events/poster-sri-lanka-buffet.jpg",
+      pdf: "/menu/poster-sri-lanka-buffet-29-aug.pdf",
+    },
   },
   {
     title: "Grünkohl mit Schlachteplatte",
@@ -72,10 +81,14 @@ export const EVENTS: EventItem[] = [
     },
   },
   {
-    title: "Sommerfest mit Spanferkel",
+    title: "Spanferkel-Woche",
     desc:
-      "Spanferkel vom Holzkohlegrill, Beilagen aus dem Garten — Grillspezialitäten den ganzen Abend.",
-    date: "Termin auf Anfrage",
-    highlight: "Zur Grillplatte ab 4 Personen eine Flasche Riesling gratis.",
+      "Eine ganze Woche knuspriges Spanferkel frisch vom Holzkohlegrill, große Grillplatten und Beilagen aus dem Garten — jeden Abend.",
+    date: "18.–24. August · täglich 18–22 Uhr",
+    highlight: "Zur Grillplatte ab 4 Personen eine Flasche Wein gratis.",
+    poster: {
+      image: "/images/events/poster-spanferkel-woche.jpg",
+      pdf: "/menu/poster-spanferkel-18-24-aug.pdf",
+    },
   },
 ];
