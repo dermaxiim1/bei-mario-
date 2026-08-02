@@ -25,8 +25,27 @@ export const SITE = {
       : "https://bei-mario.vercel.app"),
   description:
     "Bei Mario in Hannover-List — deutsche und asiatische Küche im Gartenvereinsheim. Schnitzel, Curry, Tapas und mehr. Tisch reservieren unter 0511 631412.",
-  owner: "Mario Wickremasinge",
+  owner: "Mario Wickremasinghe",
   founded: "1998",
+
+  // Rechtliche Pflichtangaben (§ 5 DDG).
+  // WICHTIG: Leere Felder werden im Impressum NICHT gerendert — so steht nie ein
+  // Platzhalter live. Sobald Mario die Angabe liefert, hier eintragen; der Block
+  // erscheint dann automatisch auf der Seite.
+  legal: {
+    // Rechtsform, z. B. "Einzelunternehmen". Leer = wird weggelassen.
+    legalForm: "",
+    // USt-IdNr. nach § 27a UStG, z. B. "DE123456789".
+    vatId: "",
+    // true, wenn Kleinunternehmer nach § 19 UStG (dann statt USt-IdNr. ein Hinweis).
+    smallBusiness: false,
+    // Registereintrag, z. B. "Amtsgericht Hannover, HRA 12345". Bei Einzelunternehmen
+    // ohne Eintragung leer lassen.
+    register: "",
+    // Zuständige Behörde für die Gaststättenerlaubnis (§ 2 GastG) — nach
+    // § 5 Abs. 1 Nr. 3 DDG anzugeben, weil die Tätigkeit zulassungspflichtig ist.
+    supervisoryAuthority: "",
+  },
 
   contact: {
     phoneFestnetz: "0511 631412",
@@ -52,9 +71,9 @@ export const SITE = {
   // Geschlossene Gesellschaft / private Veranstaltungen.
   // Tage oder Zeiträume einfach ergänzen bzw. entfernen; active steuert die Anzeige.
   closedForEvents: {
-    active: true,
-    dates: ["12. – 22. Juli 2026"],
-    reopen: "Am 23. Juli ist Team Mario wieder für Sie da.",
+    active: false,
+    dates: [] as readonly string[],
+    reopen: "",
   },
 
   nav: [
