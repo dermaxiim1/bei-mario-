@@ -9,34 +9,12 @@ export type EventItem = {
   };
 };
 
-// Reihenfolge = Anzeige-Reihenfolge: erst der wöchentliche Gambas-Freitag, dann die
-// Termine mit festem Datum (chronologisch, mit Plakat), danach die wiederkehrenden
-// Anlässe "auf Anfrage".
+// Reihenfolge = Anzeige-Reihenfolge: erst die Termine mit festem Datum (chronologisch,
+// mit Plakat), danach die wiederkehrenden Anlässe "auf Anfrage". Wiederkehrende
+// Wochentermine stehen, falls vorhanden, vor den festen Terminen.
 // Ist ein Termin vorbei: date auf "Termin auf Anfrage" setzen und poster/highlight
 // entfernen. Die Plakat-Dateien bleiben im Repo und sind nächste Saison wiederverwendbar.
 export const EVENTS: EventItem[] = [
-  {
-    title: "Gambas satt essen",
-    desc:
-      "Jeden Freitagabend Gambas aus der Pfanne, in Knoblauch und Chili — so oft Sie nachlegen möchten. Dazu Baguette und ein Glas Wein.",
-    date: "Jeden Freitag · ab 18 Uhr",
-    highlight: "18,50 € pro Person · ab 4 Personen eine Flasche Wein gratis.",
-    poster: {
-      image: "/images/events/poster-gambas-freitags.jpg",
-      pdf: "/menu/poster-gambas-freitags.pdf",
-    },
-  },
-  {
-    title: "Spanferkel-Woche",
-    desc:
-      "Eine ganze Woche knuspriges Spanferkel frisch vom Holzkohlegrill, große Grillplatten und Beilagen aus dem Garten — jeden Abend.",
-    date: "18.–24. August · täglich 18–22 Uhr",
-    highlight: "Zur Grillplatte ab 4 Personen eine Flasche Wein gratis.",
-    poster: {
-      image: "/images/events/poster-spanferkel-woche.jpg",
-      pdf: "/menu/poster-spanferkel-18-24-aug.pdf",
-    },
-  },
   {
     title: "Sri Lanka Buffet",
     desc:
@@ -117,6 +95,18 @@ export const EVENTS: EventItem[] = [
     title: "Spargel-Saison",
     desc:
       "Eine Woche frischer Spargel aus der Region — klassisch mit Schinken oder mit asiatischem Twist.",
+    date: "Termin auf Anfrage",
+  },
+  {
+    title: "Gambas satt essen",
+    desc:
+      "Gambas aus der Pfanne, in Knoblauch und Chili — so oft Sie nachlegen möchten. Dazu Baguette und ein Glas Wein.",
+    date: "Termin auf Anfrage",
+  },
+  {
+    title: "Spanferkel-Woche",
+    desc:
+      "Knuspriges Spanferkel frisch vom Holzkohlegrill, große Grillplatten und Beilagen aus dem Garten.",
     date: "Termin auf Anfrage",
   },
 ];
