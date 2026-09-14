@@ -1,7 +1,11 @@
 export type GalleryImage = {
   src: string;
   alt: string;
-  /** custom Tailwind grid spans for the masonry-feel layout (12-col base) */
+  /**
+   * custom Tailwind grid spans for the masonry-feel layout (12-col base).
+   * Spans are tuned so the grid closes without gaps at base, sm and lg —
+   * re-check the layout when adding or removing images.
+   */
   className: string;
 };
 
@@ -34,12 +38,12 @@ export const GALLERY: GalleryImage[] = [
   {
     src: "/images/gallery/zutaten-korb.jpg",
     alt: "Frische Zutaten im Korb",
-    className: "col-span-6 row-span-2 lg:col-span-4",
+    className: "col-span-6 row-span-2 lg:col-span-5",
   },
   {
     src: "/images/gallery/buffet-wraps.jpg",
     alt: "Wraps und Häppchen auf dem Buffet",
-    className: "col-span-12 row-span-2 sm:col-span-6 lg:col-span-4",
+    className: "col-span-6 row-span-2 lg:col-span-4",
   },
   {
     src: "/images/gallery/paella-meeresfruechte.jpg",
@@ -47,9 +51,14 @@ export const GALLERY: GalleryImage[] = [
     className: "col-span-6 row-span-2 lg:col-span-3 lg:row-span-3",
   },
   {
+    src: "/images/gallery/tisch-spareribs.jpg",
+    alt: "Gedeckter Tisch von oben mit Spareribs, Ofenkartoffeln mit Gemüse und Oliven, Krautsalat und Baguette",
+    className: "col-span-6 row-span-2 sm:row-span-4 lg:col-span-3 lg:row-span-3",
+  },
+  {
     src: "/images/gallery/tapas-platte.jpg",
     alt: "Tapas-Platte mit Serrano-Schinken, Manchego und Samosas",
-    className: "col-span-12 row-span-2 sm:col-span-6 lg:col-span-5 lg:row-span-2",
+    className: "col-span-12 row-span-2 sm:col-span-6 lg:col-span-6 lg:row-span-3",
   },
   {
     src: "/images/gallery/buffet-warmhaltung.jpg",
@@ -59,11 +68,11 @@ export const GALLERY: GalleryImage[] = [
   {
     src: "/images/gallery/sektempfang-erdbeere.jpg",
     alt: "Sektempfang im Garten — Prosecco und Orangensaft mit Erdbeere",
-    className: "col-span-6 row-span-2 lg:col-span-4",
+    className: "col-span-6 row-span-2 lg:col-span-4 lg:row-span-3",
   },
   {
     src: "/images/gallery/cupcakes-feier.jpg",
     alt: "Cupcake-Etagere zur Hochzeitsfeier mit essbaren Blüten",
-    className: "col-span-12 row-span-2 sm:col-span-6 lg:col-span-4",
+    className: "col-span-12 row-span-2 sm:col-span-6 lg:col-span-4 lg:row-span-3",
   },
 ];
