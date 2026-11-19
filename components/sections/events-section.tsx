@@ -3,6 +3,7 @@ import Image from "next/image";
 import { SectionLabel } from "@/components/ui/section-label";
 import { EVENTS } from "@/lib/events";
 import { SITE } from "@/lib/site";
+import { cn } from "@/lib/utils";
 
 export function EventsSection() {
   // Im Fokus stehen nur die Termine mit Plakat. Alles andere läuft darunter
@@ -23,7 +24,13 @@ export function EventsSection() {
           nicht <em className="italic text-terra">vergisst.</em>
         </h2>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          className={cn(
+            "mt-14 grid grid-cols-1 gap-6 md:grid-cols-2",
+            // Vier Plakate passen in eine Reihe, sonst bleibt es bei drei Spalten.
+            featured.length === 4 ? "xl:grid-cols-4" : "lg:grid-cols-3",
+          )}
+        >
           {featured.map((event) => (
             <article
               key={event.title}

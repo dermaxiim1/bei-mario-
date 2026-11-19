@@ -16,6 +16,17 @@ export type EventItem = {
 // entfernen. Die Plakat-Dateien bleiben im Repo und sind nächste Saison wiederverwendbar.
 export const EVENTS: EventItem[] = [
   {
+    title: "Gambas satt essen",
+    desc:
+      "Jeden Freitagabend Gambas aus der Pfanne, in Knoblauch und Chili — so oft Sie nachlegen möchten. Dazu Baguette und ein Glas Wein.",
+    date: "Jeden Freitag · ab 18 Uhr",
+    highlight: "18,50 € pro Person · ab 4 Personen eine Flasche Wein gratis.",
+    poster: {
+      image: "/images/events/poster-gambas-freitags.jpg",
+      pdf: "/menu/poster-gambas-freitags.pdf",
+    },
+  },
+  {
     title: "Adventsbrunch",
     desc:
       "Gemütlich in den vierten Advent starten: Brunch am Buffet bei Mario, die Getränke sind im Preis enthalten.",
@@ -92,12 +103,6 @@ export const EVENTS: EventItem[] = [
     title: "Spargel-Saison",
     desc:
       "Eine Woche frischer Spargel aus der Region — klassisch mit Schinken oder mit asiatischem Twist.",
-    date: "Termin auf Anfrage",
-  },
-  {
-    title: "Gambas satt essen",
-    desc:
-      "Gambas aus der Pfanne, in Knoblauch und Chili — so oft Sie nachlegen möchten. Dazu Baguette und ein Glas Wein.",
     date: "Termin auf Anfrage",
   },
   {
