@@ -19,7 +19,7 @@ export function SiteHeader() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-9 lg:flex">
+        <nav className="mx-3 hidden items-center gap-4 lg:flex xl:mx-0 xl:gap-9">
           {SITE.nav.map((item) => (
             <Link
               key={item.href}
@@ -34,7 +34,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-3">
           <a
             href="#besuch"
-            className="hidden rounded-full bg-terra px-[22px] py-3 text-[13px] font-medium tracking-[0.04em] text-cream transition-all hover:-translate-y-px hover:bg-terra-deep md:inline-block"
+            className="hidden whitespace-nowrap rounded-full bg-terra px-[22px] py-3 text-[13px] font-medium tracking-[0.04em] text-cream transition-all hover:-translate-y-px hover:bg-terra-deep md:inline-block"
           >
             Tisch reservieren
           </a>

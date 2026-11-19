@@ -1,5 +1,6 @@
 import { About } from "@/components/sections/about";
 import { EventsSection } from "@/components/sections/events-section";
+import { FoodtruckSection } from "@/components/sections/foodtruck-section";
 import { GallerySection } from "@/components/sections/gallery-section";
 import { Hero } from "@/components/sections/hero";
 import { MenuCards } from "@/components/sections/menu-cards";
@@ -16,6 +17,7 @@ export default function HomePage() {
       <TageskarteSection />
       <About />
       <GallerySection />
+      <FoodtruckSection />
       <EventsSection />
       <ReviewsSection />
       <VisitSection />

@@ -81,6 +81,7 @@ export const SITE = {
     { href: "#karte", label: "Karte" },
     { href: "#gerichte", label: "Gerichte" },
     { href: "#bilder", label: "Feiern" },
+    { href: "#foodtruck", label: "Foodtruck" },
     { href: "#veranstaltungen", label: "Veranstaltungen" },
     { href: "#besuch", label: "Besuch" },
   ] as const,
