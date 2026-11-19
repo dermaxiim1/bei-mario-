@@ -16,61 +16,6 @@ export type EventItem = {
 // entfernen. Die Plakat-Dateien bleiben im Repo und sind nächste Saison wiederverwendbar.
 export const EVENTS: EventItem[] = [
   {
-    title: "Sri Lanka Buffet",
-    desc:
-      "Marios Heimatküche zum Schlemmen — Currys, Sambols und Reisspezialitäten aus Sri Lanka am Buffet.",
-    date: "Samstag, 29. August · ab 18:00",
-    highlight: "28 € pro Person · inklusive Welcome Drink",
-    poster: {
-      image: "/images/events/poster-sri-lanka-buffet.jpg",
-      pdf: "/menu/poster-sri-lanka-buffet-29-aug.pdf",
-    },
-  },
-  {
-    title: "Spanische Tapas-Nacht",
-    desc:
-      "Paella, Tapas und Sangria — dazu DJ Lopez auflegt und ein halbstündiger Salsa-Schnupperkurs. Anmeldung telefonisch bei Mario erbeten.",
-    date: "Sonntag, 30. August · ab 18:00",
-    highlight: "Zur Tapasplatte ab 4 Personen eine Flasche spanischer Wein gratis.",
-    poster: {
-      image: "/images/events/poster-spanische-tapas.jpg",
-      pdf: "/menu/poster-spanische-tapas-30-aug.pdf",
-    },
-  },
-  {
-    title: "Rippchen zum Sattessen",
-    desc:
-      "Zarte Rippchen vom Grill, so viel Sie mögen — dazu frischer Salat und Baguette. Ein Abend für alle, die es herzhaft mögen.",
-    date: "Samstag, 5. September · ab 12:30",
-    highlight: "24 € zum Sattessen · als einzelne Portion 16 €",
-    poster: {
-      image: "/images/events/poster-rippchen-5-sep.jpg",
-      pdf: "/menu/poster-rippchen-5-sep.pdf",
-    },
-  },
-  {
-    title: "Oktoberfest 2026",
-    desc:
-      "Großes Oktoberfest-Buffet mit bayerischen Spezialitäten, Bier und Schnaps — Tracht gern gesehen.",
-    date: "Samstag, 3. Oktober · ab 13:00",
-    highlight: "26,50 € pro Person · Reservierung empfohlen",
-    poster: {
-      image: "/images/events/poster-oktoberfest-3-okt.jpg",
-      pdf: "/menu/poster-oktoberfest-3-okt.pdf",
-    },
-  },
-  {
-    title: "Sonntags-Brunch",
-    desc:
-      "Ausgiebig in den Sonntag starten — herzhaftes Frühstück, frisch Gebackenes und süße Klassiker am Buffet.",
-    date: "Sonntag, 18. Oktober · ab 10:30",
-    highlight: "22 € pro Person",
-    poster: {
-      image: "/images/events/poster-brunch-18-okt.jpg",
-      pdf: "/menu/poster-brunch-18-okt.pdf",
-    },
-  },
-  {
     title: "Grünkohl-Buffet",
     desc:
       "Norddeutscher Klassiker am langen Tisch — Grünkohl wie er sein soll, mit Pinkel, Kassler und mehr.",
@@ -82,8 +27,65 @@ export const EVENTS: EventItem[] = [
     },
   },
   {
-    title: "Weihnachtsbuffet",
-    desc: "Festlich gedeckt mit Wild, Braten und süßem Finale. Reservierung empfohlen.",
+    title: "Adventsbrunch",
+    desc:
+      "Gemütlich in den vierten Advent starten: Brunch am Buffet bei Mario, die Getränke sind im Preis enthalten.",
+    date: "Sonntag, 20. Dezember · ab 10:30",
+    highlight: "22 € pro Person · Getränke inklusive",
+    poster: {
+      image: "/images/events/poster-adventsbrunch-20-dez.jpg",
+      pdf: "/menu/poster-adventsbrunch-20-dez.pdf",
+    },
+  },
+  {
+    title: "Weihnachtsmenü",
+    desc:
+      "Festliches Essen in besonderer Atmosphäre am 1. und 2. Weihnachtstag. Bitte telefonisch oder persönlich anmelden.",
+    date: "1. und 2. Weihnachtstag · 25. und 26. Dezember",
+    highlight: "Hauptgang ab 25,50 €",
+    poster: {
+      image: "/images/events/poster-weihnachtsmenue-2026.jpg",
+      pdf: "/menu/poster-weihnachtsmenue-2026.pdf",
+    },
+  },
+  {
+    title: "Silvesterparty 2027",
+    desc:
+      "Gemeinsam ins neue Jahr feiern: rustikales Buffet, Mitternachtssuppe und ein Glas Sekt zum Anstoßen.",
+    date: "Donnerstag, 31. Dezember · ab 18:00",
+    highlight: "30 € pro Person · Buffet, Mitternachtssuppe und 1 Glas Sekt",
+    poster: {
+      image: "/images/events/poster-silvester-31-dez.jpg",
+      pdf: "/menu/poster-silvester-31-dez.pdf",
+    },
+  },
+  {
+    title: "Sri Lanka Buffet",
+    desc:
+      "Marios Heimatküche zum Schlemmen — Currys, Sambols und Reisspezialitäten aus Sri Lanka am Buffet.",
+    date: "Termin auf Anfrage",
+  },
+  {
+    title: "Spanische Tapas-Nacht",
+    desc: "Paella, Tapas und Sangria. Anmeldung telefonisch bei Mario erbeten.",
+    date: "Termin auf Anfrage",
+  },
+  {
+    title: "Rippchen zum Sattessen",
+    desc:
+      "Zarte Rippchen vom Grill, so viel Sie mögen — dazu frischer Salat und Baguette. Ein Abend für alle, die es herzhaft mögen.",
+    date: "Termin auf Anfrage",
+  },
+  {
+    title: "Oktoberfest",
+    desc:
+      "Großes Oktoberfest-Buffet mit bayerischen Spezialitäten, Bier und Schnaps — Tracht gern gesehen.",
+    date: "Termin auf Anfrage",
+  },
+  {
+    title: "Sonntags-Brunch",
+    desc:
+      "Ausgiebig in den Sonntag starten — herzhaftes Frühstück, frisch Gebackenes und süße Klassiker am Buffet.",
     date: "Termin auf Anfrage",
   },
   {
