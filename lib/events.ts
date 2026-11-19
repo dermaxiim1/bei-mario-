@@ -20,7 +20,7 @@ export const EVENTS: EventItem[] = [
     desc:
       "Jeden Freitagabend Gambas aus der Pfanne, in Knoblauch und Chili — so oft Sie nachlegen möchten. Dazu Baguette und ein Glas Wein.",
     date: "Jeden Freitag · ab 18 Uhr",
-    highlight: "18,50 € pro Person · ab 4 Personen eine Flasche Wein gratis.",
+    highlight: "18,50\u00a0€ pro Person · ab 4 Personen eine Flasche Wein gratis.",
     poster: {
       image: "/images/events/poster-gambas-freitags.jpg",
       pdf: "/menu/poster-gambas-freitags.pdf",
@@ -31,7 +31,7 @@ export const EVENTS: EventItem[] = [
     desc:
       "Gemütlich in den vierten Advent starten: Brunch am Buffet bei Mario, die Getränke sind im Preis enthalten.",
     date: "Sonntag, 20. Dezember · ab 10:30",
-    highlight: "22 € pro Person · Getränke inklusive",
+    highlight: "22\u00a0€ pro Person · Getränke inklusive",
     poster: {
       image: "/images/events/poster-adventsbrunch-20-dez.jpg",
       pdf: "/menu/poster-adventsbrunch-20-dez.pdf",
@@ -42,7 +42,7 @@ export const EVENTS: EventItem[] = [
     desc:
       "Festliches Essen in besonderer Atmosphäre am 1. und 2. Weihnachtstag. Bitte telefonisch oder persönlich anmelden.",
     date: "1. und 2. Weihnachtstag · 25. und 26. Dezember",
-    highlight: "Hauptgang ab 25,50 €",
+    highlight: "Hauptgang ab 25,50\u00a0€",
     poster: {
       image: "/images/events/poster-weihnachtsmenue-2026.jpg",
       pdf: "/menu/poster-weihnachtsmenue-2026.pdf",
@@ -53,7 +53,7 @@ export const EVENTS: EventItem[] = [
     desc:
       "Gemeinsam ins neue Jahr feiern: rustikales Buffet, Mitternachtssuppe und ein Glas Sekt zum Anstoßen.",
     date: "Donnerstag, 31. Dezember · ab 18:00",
-    highlight: "30 € pro Person · Buffet, Mitternachtssuppe und 1 Glas Sekt",
+    highlight: "30\u00a0€ pro Person · Buffet, Mitternachtssuppe und 1 Glas Sekt",
     poster: {
       image: "/images/events/poster-silvester-31-dez.jpg",
       pdf: "/menu/poster-silvester-31-dez.pdf",

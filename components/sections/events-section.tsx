@@ -57,7 +57,13 @@ export function EventsSection() {
                   </div>
                 </a>
               )}
-              <div className="flex flex-1 flex-col p-9">
+              <div
+                className={cn(
+                  "flex flex-1 flex-col p-9",
+                  // Vier schmale Karten: weniger Innenabstand, damit der Text Luft hat.
+                  featured.length === 4 && "xl:p-6",
+                )}
+              >
                 {event.date && (
                   <div className="mb-3 font-serif text-lg italic text-terra">
                     {event.date}
