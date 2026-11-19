@@ -9,23 +9,12 @@ export type EventItem = {
   };
 };
 
-// Reihenfolge = Anzeige-Reihenfolge: erst die Termine mit festem Datum (chronologisch,
-// mit Plakat), danach die wiederkehrenden Anlässe "auf Anfrage". Wiederkehrende
+// Reihenfolge = Anzeige-Reihenfolge. Termine MIT Plakat stehen groß im Fokus, alle
+// ohne Plakat laufen darunter als schlichte Liste "Weitere Anlässe im Jahr". Wiederkehrende
 // Wochentermine stehen, falls vorhanden, vor den festen Terminen.
 // Ist ein Termin vorbei: date auf "Termin auf Anfrage" setzen und poster/highlight
 // entfernen. Die Plakat-Dateien bleiben im Repo und sind nächste Saison wiederverwendbar.
 export const EVENTS: EventItem[] = [
-  {
-    title: "Grünkohl-Buffet",
-    desc:
-      "Norddeutscher Klassiker am langen Tisch — Grünkohl wie er sein soll, mit Pinkel, Kassler und mehr.",
-    date: "Dienstag, 1. Dezember · ab 12:30",
-    highlight: "25 € pro Person am Buffet · 16,50 € als Tellergericht",
-    poster: {
-      image: "/images/events/poster-gruenkohl-1-dez.jpg",
-      pdf: "/menu/poster-gruenkohl-1-dez.pdf",
-    },
-  },
   {
     title: "Adventsbrunch",
     desc:
@@ -58,6 +47,12 @@ export const EVENTS: EventItem[] = [
       image: "/images/events/poster-silvester-31-dez.jpg",
       pdf: "/menu/poster-silvester-31-dez.pdf",
     },
+  },
+  {
+    title: "Grünkohl-Buffet",
+    desc:
+      "Norddeutscher Klassiker am langen Tisch — Grünkohl wie er sein soll, mit Pinkel, Kassler und mehr.",
+    date: "Dienstag, 1. Dezember · ab 12:30",
   },
   {
     title: "Sri Lanka Buffet",

@@ -2,8 +2,14 @@ import Image from "next/image";
 
 import { SectionLabel } from "@/components/ui/section-label";
 import { EVENTS } from "@/lib/events";
+import { SITE } from "@/lib/site";
 
 export function EventsSection() {
+  // Im Fokus stehen nur die Termine mit Plakat. Alles andere läuft darunter
+  // als schlichte Liste mit.
+  const featured = EVENTS.filter((event) => event.poster);
+  const others = EVENTS.filter((event) => !event.poster);
+
   return (
     <section
       id="veranstaltungen"
@@ -18,7 +24,7 @@ export function EventsSection() {
         </h2>
 
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {EVENTS.map((event) => (
+          {featured.map((event) => (
             <article
               key={event.title}
               className="relative flex flex-col overflow-hidden rounded-sm border border-ink/10 bg-cream transition-transform duration-300 hover:-translate-y-1"
@@ -73,6 +79,34 @@ export function EventsSection() {
             </article>
           ))}
         </div>
+
+        {others.length > 0 && (
+          <div className="mt-20 border-t border-ink/15 pt-10">
+            <h3 className="font-serif text-2xl font-normal leading-tight">
+              Weitere Anlässe im Jahr
+            </h3>
+            <p className="mt-2 text-sm text-ink-soft">
+              Termine auf Anfrage unter {SITE.contact.phoneMobil}.
+            </p>
+            <ul className="mt-8 grid grid-cols-1 gap-x-10 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
+              {others.map((event) => (
+                <li key={event.title}>
+                  <div className="font-serif text-lg leading-tight">
+                    {event.title}
+                  </div>
+                  {event.date && event.date !== "Termin auf Anfrage" && (
+                    <div className="mt-1 font-serif text-sm italic text-terra">
+                      {event.date}
+                    </div>
+                  )}
+                  <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">
+                    {event.desc}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </section>
   );
